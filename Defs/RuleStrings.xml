@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+  <RulePackDef>
+    <defName>Namer_mari_yume</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] '[nickName]' [lastName]</li>
+        <li>r_name->[firstName] [lastName]</li>
+        <li>firstName->Mari</li>
+        <li>firstName->Mawi</li>
+        <li>firstName->Mar</li>
+        <li>firstName->Maria</li>
+        <li>firstName->MarMar</li>
+        <li>firstName->Muhri</li>
+        <li>firstName->Merry</li>
+        <li>firstName->Mary</li>
+        <li>firstName->Mommy</li>
+
+
+        <li>nickName->neko</li>
+        <li>nickName->shorty</li>
+        <li>nickName->baka</li>
+        <li>nickName->dork</li>
+
+        <li>lastName(p=10)->Yume</li>
+        <li>lastName->Yumi</li>
+        
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+   
+</Defs>

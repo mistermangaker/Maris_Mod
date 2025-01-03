@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   <ThingDef Name="NekosocksBase" Abstract="True" ParentName="NekoApparelBase">
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>205</displayPriority>
+    </recipeMaker>
+    <costList> 
+      <Cloth>30</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+    <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+      <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Underwear</li>
+      </layers>
+      <tags>
+        <li>nekobasic</li>
+      </tags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+   </ThingDef>
+    
+
+
+   <ThingDef ParentName="NekosocksBase">
+    <defName>mari_socks_one</defName>
+    <label>mari's socks type 1</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/MariStrippedSocks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+   <ThingDef ParentName="NekosocksBase">
+    <defName>mari_socks_two</defName>
+    <label>mari's socks type 2</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/MariAsymSocksAndGarter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+     <ThingDef ParentName="NekosocksBase">
+    <defName>mari_socks_three</defName>
+    <label>mari's socks type 3</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/PinkMariSocks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+     <ThingDef ParentName="NekosocksBase">
+    <defName>mari_socks_four</defName>
+    <label>mari's socks type 4</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/MariAsymSocksAndGarter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--
+<ThingDef ParentName="ApparelMakeableBase">
+    <defName>mari_underwear_one</defName>
+    <label>mari's underwear</label>
+    <description>placeholder</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>205</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/Choker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList> 
+      <Cloth>30</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>800</WorkToMake>
+      <Mass>0.25</Mass>
+    </statBases>
+    <apparel>
+    <countsAsClothingForNudity>true</countsAsClothingForNudity>
+       <bodyPartGroups>
+        <li>Legs</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <layers>
+        <li>UnderwearTop</li>
+      </layers>
+      <tags>
+        <li>nekobasic</li>
+      </tags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+-->
+
+  <ThingDef Name="NekoNeckWearBase" Abstract="True" ParentName="NekoApparelBase">
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>205</displayPriority>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>800</WorkToMake>
+      <Mass>0.25</Mass>
+    </statBases>
+    <apparel>
+    <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>EyeCover</li>
+      </layers>
+      <tags>
+        <li>nekobasic</li>
+      </tags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>    
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+ <ThingDef ParentName="NekoNeckWearBase">
+    <defName>mari_Choker_one</defName>
+    <label>mari's Choker type 1</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/Choker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList> 
+      <Cloth>10</Cloth>
+    </costList>
+
+  </ThingDef>
+
+   <ThingDef ParentName="NekoNeckWearBase">
+    <defName>mari_Choker_two</defName>
+    <label>mari's collar</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/MariCatCollar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList> 
+      <Cloth>10</Cloth>
+      <Gold>1</Gold>
+    </costList>
+  </ThingDef>
+ 
+
+
+</Defs>

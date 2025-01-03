@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<DesignatorDropdownGroupDef>
+    <defName>Body_Pillows</defName>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Anime_figurines</defName>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Anime_plushies</defName>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Anime_decor</defName>
+  </DesignatorDropdownGroupDef>
+
+<ThingDef Name="AnimeDecorBase" Abstract="True" ParentName="BuildingBase">
+<thingClass>Building</thingClass>
+	
+	<clearBuildingArea>false</clearBuildingArea>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+		<li>BuildingsFurniture</li>
+	</thingCategories>
+    <blockWind>false</blockWind>
+    <designationCategory>Furniture</designationCategory>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+	<building>
+		<isEdifice>false</isEdifice>
+		<canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<passability>Standable</passability>
+    <fillPercent>0.15</fillPercent>
+</ThingDef>
+
+<ThingDef Name="AnimeDecorOneByOne" Abstract="True" ParentName="AnimeDecorBase">
+    <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+
+        <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+</ThingDef>
+
+<ThingDef Name="AnimeDecorMisc" Abstract="True" ParentName="AnimeDecorOneByOne">
+    <designatorDropdown>Anime_decor</designatorDropdown>
+    <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+	<pathCost>8</pathCost>
+	<statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>1</Mass>
+      <Flammability>1</Flammability>
+	  <Beauty>2</Beauty>
+    </statBases>
+</ThingDef>
+
+<ThingDef Name="AnimeDecorFigurines" Abstract="True" ParentName="AnimeDecorOneByOne">
+    <designatorDropdown>Anime_figurines</designatorDropdown>
+    <costList>
+      <Steel>30</Steel>
+    </costList>
+	<pathCost>8</pathCost>
+	<statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>1.5</Mass>
+      <Flammability>1</Flammability>
+	  <Beauty>4</Beauty>
+    </statBases>
+</ThingDef>
+
+<ThingDef Name="AnimePlushiesBase" Abstract="True" ParentName="AnimeDecorOneByOne">
+    <designatorDropdown>Anime_plushies</designatorDropdown>
+    <costList>
+      <Cloth>30</Cloth>
+    </costList>
+	<pathCost>8</pathCost>
+	<statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>1.5</Mass>
+      <Flammability>1</Flammability>
+	  <Beauty>6</Beauty>
+    </statBases>
+</ThingDef>
+
+
+<ThingDef Name="AnimeDecorFigurinesRotatable" Abstract="True" ParentName="AnimeDecorFigurines">
+    <graphicData>
+        <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    
+</ThingDef>
+
+<ThingDef Name="AnimeDecorTwoByOne" Abstract="True" ParentName="AnimeDecorBase">
+    <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <size>(2,1)</size>
+</ThingDef>
+
+<ThingDef Name="AnimeDecorBodyPillows" Abstract="True" ParentName="AnimeDecorTwoByOne">
+    <designatorDropdown>Body_Pillows</designatorDropdown>
+    <costList>
+      <Cloth>30</Cloth>
+    </costList>
+	<pathCost>8</pathCost>
+	<statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>1.5</Mass>
+      <Flammability>1</Flammability>
+	  <Beauty>6</Beauty>
+    </statBases>
+</ThingDef>
+
+
+<ThingDef ParentName="AnimeDecorFigurinesRotatable">
+    <defName>neko_figurine_mari</defName>
+    <label>figurine of mari</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Decor/NekoFigurineMari</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Decor/NekoFigurineMari_menuIcon</uiIconPath>
+  </ThingDef>
+
+<ThingDef ParentName="AnimeDecorMisc">
+    <defName>neko_book_pile</defName>
+    <label>pile of books</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Decor/Neko_book_stack</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="AnimeDecorMisc">
+    <defName>neko_big_knife</defName>
+    <label>knife</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Decor/neko_big_knife</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="AnimeDecorMisc">
+    <defName>neko_cup_noodles</defName>
+    <label>empty cup noodles</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Decor/neko_cup_noodle</texPath>
+    </graphicData>
+  </ThingDef>
+
+
+<ThingDef ParentName="AnimeDecorFigurinesRotatable">
+    <defName>neko_small_shark_plushie</defName>
+    <label>shark plushie</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Decor/NekoSharkPlushie</texPath>
+      <drawSize>(1.2,1.2)</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Building/Decor/NekoSharkPlushie_MenuIcon</uiIconPath>
+  </ThingDef>
+
+<ThingDef ParentName="AnimeDecorBodyPillows">
+    <defName>neko_daki_mari</defName>
+    <label>Dakimakura of mari</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Decor/Neko_daki_mari</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Decor/Neko_daki_mari</uiIconPath>
+  </ThingDef>
+
+  <ThingDef ParentName="AnimeDecorBodyPillows">
+    <defName>neko_giant_shark_plushie</defName>
+    <label>giant shark plushie</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Decor/Neko_giant_shark_plushie</texPath>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AnimeDecorTwoByOne">
+    <defName>neko_katana</defName>
+    <label>decorative katana</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Building/Decor/Neko_katana</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Decor/Neko_katana</uiIconPath>
+    <costList>
+      <Steel>30</Steel>
+      <WoodLog>1</WoodLog>
+    </costList>
+	<statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>1.5</Mass>
+      <Flammability>1</Flammability>
+	  <Beauty>6</Beauty>
+    </statBases>
+  </ThingDef>
+
+</Defs>

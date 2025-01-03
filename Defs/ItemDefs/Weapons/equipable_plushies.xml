@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   <ThingDef Name="BaseSoftWeapons" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Industrial</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="BasePlushie" Abstract="True" ParentName="BaseSoftWeapons">
+  <recipeMaker>
+  
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+      <unfinishedThingDef>UnfinishedPlushie</unfinishedThingDef>
+    </recipeMaker>
+  <uiIconScale>1.1</uiIconScale>
+    <costStuffCount>40</costStuffCount>
+    <statBases>
+        <Beauty>8</Beauty>
+      <WorkToMake>800</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+  
+  <thingCategories>
+      <li>WeaponsPlushie</li>
+    </thingCategories>
+  <weaponTags>
+      <li>Neko_plushies</li>
+    </weaponTags>
+  <tools>
+      <li>
+        <label>Plushie</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef Name="BaseDaki" Abstract="True" ParentName="BaseSoftWeapons">
+  <graphicData>
+      
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+        <costList>
+            <Cloth>50</Cloth>
+        </costList>
+        <statBases>
+            <Beauty>8</Beauty>
+            <WorkToMake>1200</WorkToMake>
+            <Mass>1.5</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+        <unfinishedThingDef>UnfinishedDakimakura</unfinishedThingDef>
+    </recipeMaker>
+    <thingCategories>
+        <li>WeaponsDaki</li>
+    </thingCategories>
+    <weaponTags>
+        <li>Neko_plushies</li>
+    </weaponTags>
+    <tools>
+        <li>
+            <label>Dakimakura</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>7</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BasePlushie">
+    <defName>MeleeWeapon_plushie</defName>
+    <label>mari plushie</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Neko_plushie_mari</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseDaki">
+    <defName>MeleeWeapon_daki</defName>
+    <label>Dakimakura</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Dakimakura_blank</texPath>
+    </graphicData>
+  </ThingDef>
+
+    
+</Defs>

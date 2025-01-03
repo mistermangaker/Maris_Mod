@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+       <ThingCategoryDef>
+      <defName>SoftWeapons</defName>
+      <label>plushies</label>
+      <parent>Weapons</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>WeaponsPlushie</defName>
+      <label>plushies</label>
+      <parent>SoftWeapons</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>WeaponsDaki</defName>
+      <label>dakimakuras</label>
+      <parent>SoftWeapons</parent>
+    </ThingCategoryDef>
+
+</Defs>

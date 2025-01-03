@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+    <XenotypeIconDef>
+    <defName>Neko_girl</defName>
+    <texPath>UI/Icons/Xenotypes/Neko_girl</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeDef>
+    <defName>neko_girl</defName>
+    <label>neko girl</label>
+    <description>With gray skin adapted to artificial light, they thrive in cramped and dark spaces where combat and travel happen over short distances. They are extremely capable at digging or mining tasks. In the open, however, they suffer from a sensitivity to light, slow speed and poor eyesight at distance.\n\nAfter the first tunnel colonies failed due to the stress of confinement, colonization agencies began genetically altering colonists to live without open space or sunlight. This xenotype is known colloquially as the dirtmoles. Today, dirtmoles have expanded out of their original tunnel homes and rule many confined spaces in the anthrosphere. They can be found in deep mines, cramped low-tech spacecraft, and teeming by the billions in the dark underlayers of countless urbworlds.</description>
+    <descriptionShort>With gray skin adapted to artificial light, dirtmoles thrive in cramped and dark spaces where combat and travel happen over short distances. They are naturals at digging and navigating complex tunnel structures. In the open, they suffer from a sensitivity to light, slow speed and poor eyesight at distance.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Neko_girl</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>Namer_mari_yume</nameMaker>
+    
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <genes>
+      <li>Ears_neko</li>
+      <li>NekoVoice</li>
+      <li>TailNeko</li>
+      <li>Teeth_Neko</li>
+      <li>Hair_neko</li>
+      <li>Hair_LightBlusish</li>
+      <li>Skin_Pale</li>
+      <li>Neko_SleepSchedule</li>
+      
+      <li>Body_Standard</li>
+      <li>Body_Thin</li>
+      <li>Beard_NoBeardOnly</li>
+			<li>MoveSpeed_Quick</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MeleeDamage_Weak</li>
+			<li>LowSleep</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>ChemicalDependency_Caffeine</li>
+		</genes>
+  </XenotypeDef>
+</Defs>

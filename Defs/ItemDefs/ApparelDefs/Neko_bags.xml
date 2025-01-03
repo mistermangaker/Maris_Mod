@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<ThingDef Name="NekoBagBase" Abstract="True" ParentName="NekoApparelBase">
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <statBases>
+        <WorkToMake>2000</WorkToMake>
+        <Mass>0.5</Mass>
+        <Flammability>1</Flammability>
+        <EquipDelay>1</EquipDelay>
+	</statBases>
+    <stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <thingCategories>
+		<li>ApparelUtility</li>
+	</thingCategories>
+</ThingDef>
+
+
+
+   	<ThingDef ParentName="NekoBagBase">
+		<defName>neko_sidebagone</defName>
+		<label>mari's schoolbag</label>
+		<description>placeholder</description>
+        <graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Bags/NekoBagMenuIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Bags/bagone</wornGraphicPath>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>neko_basic</li>
+			</tags>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<male>
+						<offset>(-0.15, -0.3)</offset>
+					</male>
+					<female>
+						<offset>(-0.1,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(-0.1,-0.3)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.15,-0.4)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.2,-0.4)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(0.15, -0.3)</offset>
+					</male>
+					<female>
+						<offset>(0.1,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(0.1,-0.3)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.15,-0.4)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.2,-0.4)</offset>
+					</fat>
+				</south>
+				<east>
+					<offset>(-0.05,-0.3)</offset>
+					<hulk>
+						<offset>(-0.1,-0.1)</offset>
+					</hulk>
+					<thin>
+						<offset>(-0.1,-0.0)</offset>
+					</thin>
+					<female>
+						<offset>(-0.05,-0.0)</offset>
+					</female>
+				</east>
+				<male>
+					<scale>(0.5,0.5)</scale>
+				</male>
+				<female>
+					<scale>(0.4,0.4)</scale>
+				</female>
+				<thin>
+					<scale>(0.4,0.4)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.6,0.6)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.6,0.6)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+	</ThingDef>
+</Defs>

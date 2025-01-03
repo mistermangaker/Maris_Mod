@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   <ThingDef Name="NekoHeadwearWearBase" Abstract="True" ParentName="NekoApparelBase">
+        <recipeMaker>
+        <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <thingCategories>
+        <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToMake>1600</WorkToMake>
+        <Mass>0.25</Mass>
+        <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+        <layers> 
+        <li>Overhead</li>
+      </layers>
+        <tags>
+            <li>nekobasic</li>
+        </tags>
+        <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+        <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+
+     <ThingDef ParentName="NekoHeadwearWearBase">
+    <defName>mari_eyemask</defName>
+    <label>mari's eyemask</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Neko_eye_mask/Mask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>10</costStuffCount>
+    <stuffCategories>
+        <li>Fabric</li>
+    </stuffCategories>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Neko_eye_mask/Mask</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+    </apparel>
+  </ThingDef>
+
+     <ThingDef ParentName="NekoHeadwearWearBase">
+    <defName>mari_bow</defName>
+    <label>mari's bow</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Neko_eye_mask/Mask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>10</costStuffCount>
+    <stuffCategories>
+        <li>Fabric</li>
+    </stuffCategories>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Neko_eye_mask/Mask</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

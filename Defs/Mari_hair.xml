@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<StyleItemCategoryDef>
+	  <defName>style_neko</defName>
+	  <label>neko</label>
+	</StyleItemCategoryDef>
+
+	<HairDef Name="Neko_Hair_base" Abstract="true">
+		<styleGender>Any</styleGender>
+		<requiredGene>Hair_neko</requiredGene>
+		<category>style_neko</category>
+		<styleTags>
+			<li>style_neko</li>
+			<li>Shaved</li>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>HairShort</li>
+			
+		</styleTags>
+	</HairDef>
+
+
+
+
+
+	<HairDef ParentName="Neko_Hair_base">
+		<defName>Mari_HairOne</defName>
+		<label>mari one</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MarHair/MariOne</texPath>
+    <overrideShaderTypeDef>CutoutComplex</overrideShaderTypeDef>
+	</HairDef>
+  	<HairDef ParentName="Neko_Hair_base">
+		<defName>Mari_HairTwo</defName>
+		<label>mari two</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MarHair/MariTwo</texPath>
+	</HairDef>
+
+<!--
+
+<HairDef>
+    <defName>mari_one</defName>
+    <label>Mari Yume</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/MarHair/MariOne</texPath>
+    <overrideShaderTypeDef>CutoutComplex</overrideShaderTypeDef>
+    <category>Neko_Style</category>
+    <styleTags>
+        <li>Neko_Hair</li>
+        <li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+    </styleTags>
+    <requiredGene>Hair_neko</requiredGene>
+  </HairDef>
+  <HairDef>
+  
+    <defName>mari_two</defName>
+    <label>Mari Yume</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/MarHair/MariTwo</texPath>
+    <category>Neko_Style</category>
+    <styleTags>
+        <li>Neko_Hair</li>
+        <li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+    </styleTags>
+ <requiredGene>Hair_neko</requiredGene>
+  </HairDef>
+<HairDef>
+    <defName>maristandard</defName>
+    <label>Mari Yume</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/BlueMariStandard</texPath>
+    <overrideShaderTypeDef>CutoutComplex</overrideShaderTypeDef>
+    <category>Neko_Style</category>
+    <styleTags>
+        <li>Neko_Hair</li>
+        <li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+    </styleTags>
+  <requiredGene>Hair_neko</requiredGene>
+  </HairDef>
+<HairDef>
+    <defName>pinkmaristandard</defName>
+    <label>Mari Pink</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/PinkMari</texPath>
+    <overrideShaderTypeDef>CutoutComplex</overrideShaderTypeDef>
+    <category>Neko_Style</category>
+    <styleTags>
+        <li>Neko_Hair</li>
+        <li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+    </styleTags>
+<requiredGene>Hair_neko</requiredGene>
+  </HairDef>
+  -->
+</Defs>

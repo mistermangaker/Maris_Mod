@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   <ThingDef Name="NekoFootWearBase" Abstract="True" ParentName="NekoApparelBase">
+        <recipeMaker>
+        <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <thingCategories>
+        <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToMake>1600</WorkToMake>
+        <Mass>0.25</Mass>
+        <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Feet</li>
+            </bodyPartGroups>
+        <layers>
+            <li>Middle</li>
+        </layers>
+        <tags>
+            <li>nekobasic</li>
+        </tags>
+        <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+        <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+  <ThingDef ParentName="NekoFootWearBase">
+    <defName>mari_slippers</defName>
+    <label>mari's slippers</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/MariSlippers</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+        <li>Fabric</li>
+    </stuffCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="NekoFootWearBase">
+    <defName>mari_pink_shoes</defName>
+    <label>mari's pink mari's shoes</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/PinkMariShoes</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+        <li>Leathery</li>
+    </stuffCategories>
+  </ThingDef>
+
+    <ThingDef ParentName="NekoFootWearBase">
+    <defName>mari_sneakers</defName>
+    <label>mari's sneakers</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/MariSneakers</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+        <li>Leathery</li>
+    </stuffCategories>
+  </ThingDef>
+
+    <ThingDef ParentName="NekoFootWearBase">
+    <defName>mari_leathershoes</defName>
+    <label>mari's shoes</label>
+    <description>placeholder</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Wearables/MariShinyShoes</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+        <li>Leathery</li>
+    </stuffCategories>
+  </ThingDef>
+
+</Defs>

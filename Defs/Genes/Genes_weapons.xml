@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   
+	<GeneDef Name="Neko_Teeth" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>None</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Teeth</li>
+		</exclusionTags>
+	</GeneDef>
+
+    <GeneDef ParentName="Neko_Teeth">
+    <defName>Teeth_Neko</defName>
+        <label>Neko Teeth</label>
+        <description></description>
+        <iconPath>UI/Icons/Genes/Neko_teeth</iconPath>
+        <biostatCpx>0</biostatCpx>
+        <modExtensions>
+            <li Class="VanillaGenesExpanded.GeneExtension">
+                <hediffsToBodyParts>
+                    <li>
+                        <hediff>Neko_Teeth</hediff>
+                        <bodyparts>
+                            <li>Jaw</li>
+                        </bodyparts>
+                    </li>
+                </hediffsToBodyParts>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Neko_Teeth</defName>
+		<label>Neko Teeth</label>
+		<description>a real set of chompers</description>
+		<descriptionHyperlinks>
+			<GeneDef>Teeth_Neko</GeneDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>Neko Teeth</label>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>10</power>
+						<armorPenetration>0.15</armorPenetration>
+						<cooldownTime>2</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

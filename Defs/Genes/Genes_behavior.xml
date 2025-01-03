@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   <GeneDef>
+    <defName>Neko_SleepSchedule</defName>
+    <label>Nocturnal Habits</label>
+    <labelShortAdj>kind</labelShortAdj>
+    <description>Carriers of this gene are high in trait agreeableness and are very conscientious. They rarely insult others and will sometimes offer kind words to brighten the moods of those around them. They also never judge people by their appearance.</description>
+    <iconPath>UI/Icons/Genes/Neko_sleep</iconPath>
+    <displayCategory>Violence</displayCategory>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <ignoreDarkness>true</ignoreDarkness>
+    <forcedTraits>
+      <li>
+        <def>NightOwl</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Neko_Distractable</defName>
+    <label>distractable</label>
+    <description>Carriers of this gene are high in trait agreeableness and are very conscientious. They rarely insult others and will sometimes offer kind words to brighten the moods of those around them. They also never judge people by their appearance.</description>
+    <iconPath>UI/Icons/Genes/Neko_distractable</iconPath>
+    <displayCategory>Violence</displayCategory>
+    <displayOrderInCategory>66</displayOrderInCategory>
+    
+    <biostatMet>2</biostatMet>
+  </GeneDef>
+</Defs>

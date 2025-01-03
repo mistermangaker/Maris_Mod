@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   <GeneDef ParentName="GeneHairStyleBase">
+    <defName>Hair_neko</defName>
+    <label>Neko Hair</label>
+    <description>Carriers of this gene grow no hair on the head.</description>
+    <iconPath>UI/Icons/Genes/Neko_hair</iconPath>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>style_neko</li>
+			</tags>
+		</hairTagFilter>
+    </GeneDef>
+
+
+    <GeneDef ParentName="GeneEarsBase">
+    <defName>Ears_neko</defName>
+    <label>neko ears</label>
+    <description>Carriers of this gene have cat-like ears.</description>
+    <iconPath>UI/Icons/Genes/Neko_ears</iconPath>
+    <renderNodeProperties>
+      <li>
+        <shaderTypeDef>CutoutComplex</shaderTypeDef>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/NekoEars/nekoears</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Hair</colorType>
+				<useSkinShader>false</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+
+  <GeneDef ParentName="GeneTailBase">
+    <defName>TailNeko</defName>
+    <label>neko tail</label>
+    <description>Carriers of this gene grow a slender tail that can act as a dexterous fifth limb.</description>
+    <iconPath>UI/Icons/Genes/Neko_tail</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.05</offset>
+      </li>
+    </capMods>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/NekoTail/Tail</texPath>
+        <colorType>Hair</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, -0.15)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0, 0, -0.15)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, 0, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, 0, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_Pale</defName>
+    <label>pale skin</label>
+    
+    <description>Carriers of this gene produce a pigment that turns their skin a pale black color almost as dark as ink.</description>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(255, 236, 230)</skinColorOverride>
+    <displayOrderInCategory>99</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_LightBlusish</defName>
+    <label>silver hair</label>
+    <hairColorOverride>(239, 238, 244)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>180</displayOrderInCategory>
+    <selectionWeightCultist>0</selectionWeightCultist>
+  </GeneDef>
+
+
+</Defs>

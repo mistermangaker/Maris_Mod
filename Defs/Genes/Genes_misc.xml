@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   
+
+
+<!--still need to do mari's voice lines-->
+  <GeneDef ParentName="GeneVoiceBase">
+    <defName>NekoVoice</defName>
+    <label>neko voice</label>
+    <description>Carriers have a squealing voice like that of a cat gitl.</description>
+    <iconPath>UI/Icons/Genes/Neko_voice</iconPath>
+    <displayOrderInCategory>125</displayOrderInCategory>
+    <soundCall>Pawn_Pigskin_Call</soundCall>
+    <soundDeath>Pawn_Pigskin_Death</soundDeath>
+    <soundWounded>Pawn_Pigskin_Wounded</soundWounded>
+  </GeneDef>
+
+</Defs>
