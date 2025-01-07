@@ -126,7 +126,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseDaki">
-    <defName>MeleeWeapon_daki</defName>
+    <defName>MeleeWeapon_daki_blank</defName>
     <label>Dakimakura</label>
     <description>placeholder</description>
     <graphicData>

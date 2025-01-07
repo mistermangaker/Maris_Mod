@@ -81,7 +81,16 @@
           <thingDef>Steel</thingDef>
           <count>200</count>
         </li>
-        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Neko_rotary_grenade_launcher</thingDef>
+          <count>1</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Revolver</thingDef>
+          <count>1</count>
+        </li>
 
       </parts>
     </scenario>
